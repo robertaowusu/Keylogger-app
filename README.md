@@ -1,6 +1,6 @@
 PHP Keylogger (Real-Time)
 
-This is a basic keylogger built using PHP, HTML, and JavaScript. It captures every key the user types in a textarea and saves them with timestamps into a file called `output.log`.
+This is a basic keylogger built using PHP and HTML. It captures every key the user types in a textarea and saves them with timestamps into a file called `output.log`.
 
 
 
