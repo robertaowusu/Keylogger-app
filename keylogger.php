@@ -8,6 +8,7 @@ if (!file_exists($logFile)) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['key'])) {
     $userKey = trim($_POST['key']);
     if (!empty($userKey)) {
+        date_default_timezone_set('GMT');
         $timestamp = date("Y-m-d H:i:s");
         $log = "[$timestamp] $userKey\n";
         file_put_contents($logFile, $log, FILE_APPEND | LOCK_EX);
